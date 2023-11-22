@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: weatherapidep
-        image: mytestacr46.azurecr.io/argo-test/weather:v24
+        image: mytestacr46.azurecr.io/argo-test/weather:v25
         ports:
         - containerPort: 80
