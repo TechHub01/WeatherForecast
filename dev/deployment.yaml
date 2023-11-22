@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: weatherapi
-  namespace: cc-dep
+  namespace: cc-dev
   labels:
     app: weatherapidep
 spec:
