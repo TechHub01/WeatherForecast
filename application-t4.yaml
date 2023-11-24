@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: akuity1234
+  name: akuity-t4
   namespace: akuity
 spec:
   project: default
@@ -9,9 +9,9 @@ spec:
   source:
     repoURL: https://github.com/TechHub01/WeatherForecast.git
     targetRevision: HEAD
-    path: dev
+    path: test4
   destination: 
-    server: http://cluster-test-argo:8001 
+    server: http://cluster-test-argo:8001
     namespace: default
 
   syncPolicy:
