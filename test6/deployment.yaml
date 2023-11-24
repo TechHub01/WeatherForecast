@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weatherapi-t6
+  namespace: cc-dev
+  labels:
+    app: weatherapidep-t6
+spec:
+  selector:
+    matchLabels:
+      app: weatherapidep-t6
+  template:
+    metadata:
+      labels:
+        app: weatherapidep-t6
+    spec:
+      containers:
+      - name: weatherapidep-t6
+        image: mytestacr46.azurecr.io/argo-test/weather:v25
+        ports:
+        - containerPort: 80
